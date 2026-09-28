@@ -18,7 +18,8 @@
       #}
       <div class="s-blocks-wrapper s-information-page !mt-0">{% hook 'information_page.information_page' %}</div>
     {% else %}
-      <div class="container">
+      <div class="page-hero"><h1>{{ page.title }}</h1><p class="breadcrumb"><a href="{{ store.url }}">الرئيسية</a> / {{ page.title }}</p></div>
+      <div class="container limited-info-page">
           {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
           <nav class="breadcrumbs w-full py-5">
               <salla-breadcrumb></salla-breadcrumb>
@@ -26,7 +27,6 @@
 
           <div class="flex justify-center">
               <div class="content content--single-page w-full lg:w-10/12 bg-white rounded p-6 lg:p-8 mt-4 lg:mt-12">
-                  <h1 class="font-bold text-2xl mb-6">{{ page.title }}</h1>
                   <div class="content-entry">
                       {{ page.content|raw }}
                   </div>

@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.06 });
+    reveals.forEach((element) => observer.observe(element));
+  } else {
+    reveals.forEach((element) => element.classList.add('in'));
+  }
   const toggle = document.querySelector('[data-lo-menu]');
   const menu = document.querySelector('[data-lo-nav]');
   toggle?.addEventListener('click', () => {

@@ -305,6 +305,31 @@ input,select,textarea{font-family:inherit}
 .sort-select{padding:9px 14px;border:1px solid var(--line);border-radius:20px;background:#fff;font-size:13px;color:var(--ink)}
 .results-empty{text-align:center;padding:70px 0;color:var(--muted)}
 
+/* Salla owns product data and checkout; these rules make its lists match the storefront. */
+.limited-products-more{text-align:center;margin-top:34px}
+.limited-products salla-products-list,
+.container--products-list salla-products-list{display:block;min-height:240px}
+.limited-products .s-products-list-wrapper,
+.container--products-list .s-products-list-wrapper{gap:28px}
+.limited-products salla-product-card,
+.container--products-list salla-product-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.limited-products .s-product-card-entry,
+.container--products-list .s-product-card-entry{background:#fff;border:0;border-radius:0;box-shadow:none;height:100%}
+.limited-products .s-product-card-image,
+.container--products-list .s-product-card-image{background:var(--cream-2);aspect-ratio:4/5}
+.limited-products .s-product-card-content,
+.container--products-list .s-product-card-content{background:#fff;padding:18px;color:var(--ink)}
+.limited-products .s-product-card-content-title,
+.container--products-list .s-product-card-content-title{font:600 19px var(--font-display);color:var(--ink)}
+.limited-products .s-product-card-price,
+.container--products-list .s-product-card-price{color:var(--ink)}
+.limited-shop-label{font-size:13px;color:var(--muted)}
+.limited-info-page{padding-block:48px 76px}
+.limited-info-page .content--single-page{background:transparent;border:0;box-shadow:none;margin:0;padding:0}
+.limited-info-page .content-entry{color:var(--text);font-size:16px;line-height:1.9}
+.limited-info-page .content-entry h2,
+.limited-info-page .content-entry h3{font-family:var(--font-display);color:var(--ink)}
+
 /* -------- product page -------- */
 .product-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:flex-start}
 @media(max-width:900px){.product-layout{grid-template-columns:1fr;gap:36px}}

@@ -18,6 +18,7 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
+	<div class="shop-head"><div class="container"><div class="eyebrow">THE COLLECTION</div><h1 class="section-title" style="margin-bottom:0">{{ page.title|striptags }}</h1></div></div>
 	{% if theme.settings.get('product_index_show_breadcrumbs', true) %}
 		<div
 			class="container container--breadcrumbs">
@@ -43,7 +44,7 @@
 
 		<div class="main-content flex-1 w-full {{ filters ? 'ltr:lg:ml-8 rtl:lg:mr-8' : '' }}">
 			<div class="mb-4 sm:mb-6 flex justify-between items-center">
-				<h1 class="font-bold text-xl rtl:pl-3 ltr:pr-3" id="page-main-title">{{ page.title|raw }}</h1>
+				<span class="limited-shop-label" id="page-main-title">تصفح المجموعة</span>
 				<div class="flex items-center space-x-2 rtl:space-x-reverse">
 					{% if filters %}
 						<a data-testid="store-products-filters-mobile-trigger" href="#filters-menu" class="filters-trigger bg-border-color text-primary lg:hidden mt-2">
