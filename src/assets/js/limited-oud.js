@@ -10,4 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const url = country.value === 'KW' ? country.dataset.kwUrl : country.dataset.qaUrl;
     if (url) location.assign(url);
   });
+  document.querySelector('[data-lo-lang]')?.addEventListener('click', () => {
+    document.querySelector('[data-lo-localization]')?.open();
+  });
+  document.querySelectorAll('.collection-count[data-qa-count]').forEach((count) => {
+    const total = country?.dataset.current === 'KW' ? count.dataset.kwCount : count.dataset.qaCount;
+    count.textContent = `${total} منتجًا`;
+  });
+  document.querySelectorAll('.faq-q').forEach((question) => {
+    question.addEventListener('click', () => {
+      const item = question.closest('.faq-item');
+      const isOpen = !item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item').forEach((other) => {
+        other.classList.remove('open');
+        other.querySelector('.faq-q')?.setAttribute('aria-expanded', 'false');
+      });
+      item.classList.toggle('open', isOpen);
+      question.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
 });

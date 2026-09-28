@@ -1,17 +1,21 @@
-<div class="top-strip">Limited Oud — عود وعطور مختارة بعناية</div>
+<div class="top-strip" id="topStrip">Limited Oud — عود وعطور مختارة بعناية</div>
 <header data-testid="store-header" class="site-header">
   <div class="header-inner">
     <button class="nav-toggle" type="button" aria-label="القائمة" aria-expanded="false" data-lo-menu><svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     <a class="brand" href="{{ store.url }}" data-testid="store-header-logo"><img class="logo-img" src="{{ 'images/limited-oud/logo.png'|asset }}" alt="Limited Oud" width="44" height="44"><span class="brand-word">LIMITED<em>عود</em></span></a>
-    <nav class="main-nav" aria-label="القائمة الرئيسية" data-lo-nav><a href="{{ store.url }}">الرئيسية</a><salla-menu source="main"></salla-menu></nav>
+    <nav class="main-nav" aria-label="القائمة الرئيسية" data-lo-nav>
+      <a href="{{ store.url }}">الرئيسية</a><a href="{{ store.url }}/products">المتجر</a><a href="{{ store.url }}/products#perfume">العطور</a><a href="{{ store.url }}/products#oud">العود</a><a href="{{ store.url }}/products#collections">المجموعات</a><a href="{{ store.url }}/pages/about">عن Limited Oud</a><a href="{{ store.url }}/pages/contact">تواصل معنا</a>
+    </nav>
     <div class="header-icons">
       {% set qa_url = theme.settings.get('qa_store_url', '') %}
       {% set kw_url = theme.settings.get('kw_store_url', '') %}
       {% set current_country = theme.settings.get('store_country', 'QA') %}
       <select class="country-switch" aria-label="اختر الدولة" data-lo-country data-qa-url="{{ qa_url ?: store.url }}" data-kw-url="{{ kw_url ?: store.url }}" data-current="{{ current_country }}"><option value="QA" {{ current_country == 'QA' ? 'selected' : (qa_url ? '' : 'disabled') }}>🇶🇦 قطر</option><option value="KW" {{ current_country == 'KW' ? 'selected' : (kw_url ? '' : 'disabled') }}>🇰🇼 الكويت</option></select>
-      {% if store.settings.is_multilingual or store.settings.currencies_enabled %}<salla-localization-modal show-trigger></salla-localization-modal>{% endif %}
-      <salla-search></salla-search><salla-user-menu avatar-only show-trigger></salla-user-menu>
-      <salla-cart-summary data-testid="store-header-cart"><i slot="icon" class="sicon-shopping-bag"></i></salla-cart-summary>
+      <salla-cart-summary data-testid="store-header-cart"><svg slot="icon" viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/><path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6"/></svg></salla-cart-summary>
+      {% if store.settings.is_multilingual or store.settings.currencies_enabled %}
+        <salla-localization-modal data-lo-localization></salla-localization-modal>
+        <button class="lang-switch" type="button" data-lo-lang aria-label="{{ language.code == 'en' ? 'Switch to Arabic' : 'Switch to English' }}">{{ language.code == 'en' ? 'العربية' : 'English' }}</button>
+      {% endif %}
     </div>
   </div>
 </header>
