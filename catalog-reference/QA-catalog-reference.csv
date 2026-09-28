@@ -1,0 +1,47 @@
+sku,name,category,size,price,currency,image_file
+perfume-abq,عطر العبق,عطور,100ML,200.0,QAR,images/limited-oud/perfume-abq.jpg
+perfume-areej,عطر الأريج,عطور,100ML,250.0,QAR,images/limited-oud/perfume-areej.jpg
+perfume-fouh,عطر الفوح,عطور,100ML,200.0,QAR,images/limited-oud/perfume-fouh.jpg
+perfume-abeer,عطر العبير,عطور,100ML,200.0,QAR,images/limited-oud/perfume-abeer.jpg
+perfume-shatha,عطر الشذا,عطور,100ML,200.0,QAR,images/limited-oud/perfume-shatha.jpg
+musk-althahab,مسك الذهب,أدهان العود,ربع تولة,120.0,QAR,images/limited-oud/musk-althahab.jpg
+misk-alsabah,مسك الصباح,أدهان العود,ربع تولة,120.0,QAR,images/limited-oud/misk-alsabah.jpg
+misk-almasaa,مسك المساء,أدهان العود,ربع تولة,120.0,QAR,images/limited-oud/misk-almasaa.jpg
+dohn-oud-laosi,دهن عود لاوسي,أدهان العود,ربع تولة,130.0,QAR,images/limited-oud/dohn-oud-laosi.jpg
+dohn-oud-trad-taylandi,دهن عود تراد التايلندي - استخدام يومي,أدهان العود,ربع تولة,160.0,QAR,images/limited-oud/dohn-oud-trad-taylandi.jpg
+dohn-oud-hindi-qadim,دهن عود هندي قديم,أدهان العود,ربع تولة,450.0,QAR,images/limited-oud/dohn-oud-hindi-qadim.jpg
+dohn-oud-kambodi,دهن عود كمبودي,أدهان العود,ربع تولة,350.0,QAR,images/limited-oud/dohn-oud-kambodi.jpg
+dohn-oud-trad-alnokhba,دهن عود تراد النخبة,أدهان العود,ربع تولة,375.0,QAR,images/limited-oud/dohn-oud-trad-alnokhba.jpg
+dohn-ambar-alhoot-misk-alghazal,دهن عود عمبر الحوت ومسك الغزال الأسود الطبيعي,أدهان العود,ربع تولة,700.0,QAR,images/limited-oud/dohn-ambar-alhoot-misk-alghazal.jpg
+dohn-oud-bormi,دهن عود بورمي,أدهان العود,ربع تولة,350.0,QAR,images/limited-oud/dohn-oud-bormi.jpg
+dohn-oud-silani,دهن عود سيلاني,أدهان العود,ربع تولة,1500.0,QAR,images/limited-oud/dohn-oud-silani.jpg
+oud-mutayyab,عود مطيب,العود,36 غرام,600.0,QAR,images/limited-oud/oud-mutayyab.jpg
+oud-malaki,عود ملكي,العود,36 غرام,500.0,QAR,images/limited-oud/oud-malaki.jpg
+oud-amber,عود بالعنبر,العود,36 غرام,300.0,QAR,images/limited-oud/oud-amber.jpg
+oud-hindi-siofi-super,عود هندي سيوفي سوبر,العود,تولة,120.0,QAR,images/limited-oud/oud-hindi-siofi-super.jpg
+oud-hindi-char-double-super,عود هندي تشار دبل سوبر,العود,تولة,250.0,QAR,images/limited-oud/oud-hindi-char-double-super.jpg
+oud-hindi-mori-super,عود هندي موري سوبر,العود,تولة,130.0,QAR,images/limited-oud/oud-hindi-mori-super.jpg
+hindi-bebe-mori,هندي بيبي موري,العود,تولة,150.0,QAR,images/limited-oud/hindi-bebe-mori.jpg
+hindi-siofi-vip,هندي سيوفي VIP,العود,تولة,280.0,QAR,images/limited-oud/hindi-siofi-vip.jpg
+hindi-hobat-alolo-alaswad,هندي حبات اللولو الأسود,العود,تولة,280.0,QAR,images/limited-oud/hindi-hobat-alolo-alaswad.jpg
+char-hindi-mizoram-vvip,تشار هندي ميزورام VVIP,العود,تولة,550.0,QAR,images/limited-oud/char-hindi-mizoram-vvip.jpg
+hindi-char-vvip,هندي تشار VVIP,العود,تولة,400.0,QAR,images/limited-oud/hindi-char-vvip.jpg
+hindi-jumbo-mori-vvip,هندي جامبو موري VVIP,أدهان العود,تولة,400.0,QAR,images/limited-oud/hindi-jumbo-mori-vvip.jpg
+hindi-siofi-vvip,هندي سيوفي VVIP,العود,تولة,300.0,QAR,images/limited-oud/hindi-siofi-vvip.jpg
+hindi-siofi-farz-alnokhba,هندي سيوفي فرز للنخبة,العود,متاح,1000.0,QAR,images/limited-oud/hindi-siofi-farz-alnokhba.jpg
+trad-taylandi-triple-super,تراد تايلندي تربل سوبر,العود,تولة,300.0,QAR,images/limited-oud/trad-taylandi-triple-super.jpg
+thai-oud-capsules,كبسولات العود التايلندي,العود,تولة,150.0,QAR,images/limited-oud/thai-oud-capsules.jpg
+char-vietnami-daily,تشار فيتنامي - استخدام يومي,العود,تولة,200.0,QAR,images/limited-oud/char-vietnami-daily.jpg
+char-vietnami-double-super,تشار فيتنامي دبل سوبر,العود,تولة,230.0,QAR,images/limited-oud/char-vietnami-double-super.jpg
+char-vietnami-altamayoz,تشار فيتنامي التميز,العود,تولة,300.0,QAR,images/limited-oud/char-vietnami-altamayoz.jpg
+oud-vietnami-zawaya-double-super,عود فيتنامي زوايا دبل سوبر,العود,تولة,250.0,QAR,images/limited-oud/oud-vietnami-zawaya-double-super.jpg
+oud-vietnami-alshoyoukh,عود فيتنامي الشيوخ,العود,تولة,300.0,QAR,images/limited-oud/oud-vietnami-alshoyoukh.jpg
+oud-vietnami-royal,عود فيتنامي رويال,العود,تولة,450.0,QAR,images/limited-oud/oud-vietnami-royal.jpg
+oud-kambodi-ahmar,العود الكمبودي الأحمر,العود,تولة,250.0,QAR,images/limited-oud/oud-kambodi-ahmar.jpg
+kambodi-red-triple-super,الكمبودي الأحمر تربل سوبر,العود,تولة,350.0,QAR,images/limited-oud/kambodi-red-triple-super.jpg
+oud-kambodi-alzaman-aljamil,عود كمبودي الزمن الجميل,العود,تولة,600.0,QAR,images/limited-oud/oud-kambodi-alzaman-aljamil.jpg
+kalimantan-bontiank-super,كلمنتان بونتيانك سوبر,العود,تولة,150.0,QAR,images/limited-oud/kalimantan-bontiank-super.jpg
+kalimantan-bontiank-double-super,كلمنتان بونتيانك دبل سوبر,العود,تولة,350.0,QAR,images/limited-oud/kalimantan-bontiank-double-super.jpg
+kalimantan-bontiank-farz-alnokhba,كلمنتان بونتيانك فرز للنخبة,العود,5 تولات,1500.0,QAR,images/limited-oud/kalimantan-bontiank-farz-alnokhba.jpg
+oud-silani-qadim,عود سيلاني قديم,العود,5 تولات,2000.0,QAR,images/limited-oud/oud-silani-qadim.jpg
+event-stand,ستاند المناسبات,مجموعات وهدايا,25 شخص,1600.0,QAR,images/limited-oud/event-stand.jpg

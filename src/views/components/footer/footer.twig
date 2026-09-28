@@ -1,0 +1,12 @@
+{% set is_kw = theme.settings.get('store_country', 'QA') == 'KW' %}
+{% set whatsapp = is_kw ? '96566144477' : '97460010506' %}
+{% set instagram = is_kw ? 'https://www.instagram.com/limitedoud.kw/' : 'https://instagram.com/limitedoud' %}
+<footer data-testid="store-footer" class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="{{ store.url }}"><img src="{{ 'images/limited-oud/logo.png'|asset }}" alt="Limited Oud" class="logo-img" width="58" height="58"></a><p>عود فاخر للذوق الرفيع — أدهان عود، عطور وهدايا مختارة بعناية.</p><div class="footer-social"><a href="{{ instagram }}" aria-label="انستقرام" target="_blank" rel="noopener"><i class="sicon-instagram"></i></a><a href="https://wa.me/{{ whatsapp }}" aria-label="واتساب" target="_blank" rel="noopener"><i class="sicon-whatsapp"></i></a></div></div>
+    <div><div class="footer-title">المتجر</div><salla-menu source="main"></salla-menu></div>
+    <div><div class="footer-title">روابط مهمة</div><salla-menu source="footer" with-cookie-preferences></salla-menu></div>
+    <div><div class="footer-title">تواصل معنا</div><ul class="footer-links"><li><a href="https://wa.me/{{ whatsapp }}">واتساب: +{{ whatsapp }}</a></li><li><a href="{{ instagram }}">انستقرام</a></li></ul><salla-trust-badges></salla-trust-badges></div>
+  </div>
+  <div class="container footer-bottom"><span>© Limited Oud — جميع الحقوق محفوظة</span><span>{% hook copyright %}</span><salla-payments></salla-payments></div>
+</footer>
