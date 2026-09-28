@@ -324,6 +324,13 @@ input,select,textarea{font-family:inherit}
 .limited-products .s-product-card-price,
 .container--products-list .s-product-card-price{color:var(--ink)}
 .limited-shop-label{font-size:13px;color:var(--muted)}
+.limited-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:35px}
+.limited-info-grid article{scroll-margin-top:110px;background:var(--cream);padding:26px;border:1px solid var(--line)}
+.limited-info-grid h3{font-family:var(--font-display);color:var(--ink);font-size:20px;margin:0 0 12px}
+.limited-info-grid p{color:var(--muted);line-height:1.9;margin:0 0 10px}
+.limited-contact-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px}
+.limited-home section[id],.limited-home a[id]{scroll-margin-top:95px}
+@media(max-width:680px){.limited-info-grid{grid-template-columns:1fr}}
 .limited-info-page{padding-block:48px 76px}
 .limited-info-page .content--single-page{background:transparent;border:0;box-shadow:none;margin:0;padding:0}
 .limited-info-page .content-entry{color:var(--text);font-size:16px;line-height:1.9}
