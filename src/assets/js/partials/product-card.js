@@ -164,7 +164,36 @@ class ProductCard extends HTMLElement {
     .replace(/>/g, "&gt;");
   }
 
+  renderLimitedOudCard() {
+    const product = this.product;
+    const name = this.escapeHTML(product.name);
+    const url = this.escapeHTML(product.url || '#');
+    const image = this.escapeHTML(product?.image?.url || product?.thumbnail || this.placeholder || '');
+    const category = this.escapeHTML(product?.category?.name || product?.categories?.[0]?.name || 'منتجات');
+    const currentPrice = product.is_on_sale ? product.sale_price : (product.starting_price || product.price);
+    const price = this.getPriceFormat(currentPrice);
+    this.className = 'card';
+    this.setAttribute('id', product.id);
+    this.innerHTML = `
+      <div class="card-media"><img src="${image}" alt="${name}" loading="lazy"></div>
+      <div class="card-body">
+        <span class="card-cat">${category}</span>
+        <h3 class="card-name">${name}</h3>
+        <div class="card-foot">
+          <span class="price">${price}${product.starting_price ? ` <small>${this.startingPrice || ''}</small>` : ''}</span>
+          ${this.hideAddBtn ? '' : `<salla-add-product-button class="add-btn" shape="icon" fill="outline" product-id="${product.id}" product-status="${this.effectiveStatus}" product-type="${this.escapeHTML(product.type || 'product')}" aria-label="${this.escapeHTML(this.getAddButtonLabel())}"><svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/><path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6"/></svg></salla-add-product-button>`}
+        </div>
+      </div>
+      <a class="card-link" href="${url}" aria-label="${name}"></a>`;
+  }
+
   render(){
+    if (!this.horizontal && !this.fullImage && !this.minimal && !this.isSpecial && !this.product?.donation) {
+      this.effectiveStatus = (this.product.is_out_of_stock && window.notify_when_available_in_card)
+        ? 'out-and-notify' : this.product.status;
+      this.renderLimitedOudCard();
+      return;
+    }
     this.classList.add('s-product-card-entry'); 
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
